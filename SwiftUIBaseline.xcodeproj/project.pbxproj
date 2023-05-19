@@ -13,6 +13,12 @@
 		2D147B252A1819D30010FB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147B232A1819D30010FB03 /* Main.storyboard */; };
 		2D147B272A1819D40010FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D147B262A1819D40010FB03 /* Assets.xcassets */; };
 		2D147B2A2A1819D40010FB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147B282A1819D40010FB03 /* LaunchScreen.storyboard */; };
+		2D147B492A181A2B0010FB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D147B1F2A1819D30010FB03 /* SceneDelegate.swift */; };
+		2D147B4A2A181A2B0010FB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D147B1D2A1819D30010FB03 /* AppDelegate.swift */; };
+		2D147B4B2A181A2B0010FB03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D147B212A1819D30010FB03 /* ViewController.swift */; };
+		2D147B4C2A181A2E0010FB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147B232A1819D30010FB03 /* Main.storyboard */; };
+		2D147B4D2A181A310010FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D147B262A1819D40010FB03 /* Assets.xcassets */; };
+		2D147B4E2A181A330010FB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147B282A1819D40010FB03 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +30,18 @@
 		2D147B262A1819D40010FB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D147B292A1819D40010FB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D147B2B2A1819D40010FB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D147B352A181A0D0010FB03 /* SwiftUIBaselineExpected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBaselineExpected.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2D147B172A1819D30010FB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D147B322A181A0D0010FB03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2D147B1A2A1819D30010FB03 /* SwiftUIBaseline.app */,
+				2D147B352A181A0D0010FB03 /* SwiftUIBaselineExpected.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +102,23 @@
 			productReference = 2D147B1A2A1819D30010FB03 /* SwiftUIBaseline.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2D147B342A181A0D0010FB03 /* SwiftUIBaselineExpected */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D147B462A181A0E0010FB03 /* Build configuration list for PBXNativeTarget "SwiftUIBaselineExpected" */;
+			buildPhases = (
+				2D147B312A181A0D0010FB03 /* Sources */,
+				2D147B322A181A0D0010FB03 /* Frameworks */,
+				2D147B332A181A0D0010FB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIBaselineExpected;
+			productName = SwiftUIBaselineExpected;
+			productReference = 2D147B352A181A0D0010FB03 /* SwiftUIBaselineExpected.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +130,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2D147B192A1819D30010FB03 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					2D147B342A181A0D0010FB03 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -116,6 +151,7 @@
 			projectRoot = "";
 			targets = (
 				2D147B192A1819D30010FB03 /* SwiftUIBaseline */,
+				2D147B342A181A0D0010FB03 /* SwiftUIBaselineExpected */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +167,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D147B332A181A0D0010FB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D147B4E2A181A330010FB03 /* LaunchScreen.storyboard in Resources */,
+				2D147B4D2A181A310010FB03 /* Assets.xcassets in Resources */,
+				2D147B4C2A181A2E0010FB03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,6 +187,16 @@
 				2D147B222A1819D30010FB03 /* ViewController.swift in Sources */,
 				2D147B1E2A1819D30010FB03 /* AppDelegate.swift in Sources */,
 				2D147B202A1819D30010FB03 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D147B312A181A0D0010FB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D147B4B2A181A2B0010FB03 /* ViewController.swift in Sources */,
+				2D147B4A2A181A2B0010FB03 /* AppDelegate.swift in Sources */,
+				2D147B492A181A2B0010FB03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +357,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.SwiftUIBaseline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG IMPORT_SWIFT_UI";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +391,60 @@
 			};
 			name = Release;
 		};
+		2D147B472A181A0E0010FB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIBaseline/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SwiftUIBaselineExpected;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D147B482A181A0E0010FB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIBaseline/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SwiftUIBaselineExpected;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +462,15 @@
 			buildConfigurations = (
 				2D147B2F2A1819D40010FB03 /* Debug */,
 				2D147B302A1819D40010FB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D147B462A181A0E0010FB03 /* Build configuration list for PBXNativeTarget "SwiftUIBaselineExpected" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D147B472A181A0E0010FB03 /* Debug */,
+				2D147B482A181A0E0010FB03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
